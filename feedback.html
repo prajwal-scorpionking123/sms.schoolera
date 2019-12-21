@@ -1,0 +1,109 @@
+<html>
+<head>
+<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>feedback</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+   <script>
+ function msg()
+ {
+   alert("submitted");
+
+}
+</script>
+</head>
+<body class="bg-light">
+<div class="container">
+    <div class="card card-register mx-auto mt-10">
+      <div class="card-header">FEEDBACK FORM</div>
+      <div class="card-body">
+<form action="feedback.php" method="POST" onsubmit="msg()">
+<label>Enter the teacher name</label>
+<input type="text" class="form-control" name="Tname">
+<div class="form-group">
+ <div class="form-row">
+<div class="col-md-6">
+<label>Select Subject</label>
+<select name="Subject" class="form-control">
+<option>MARATHI</option>
+<option>HINDI</option>
+<option>ENGLISH</option>
+<option>MATHS</option>
+<option>SCIENCE</option>
+<option>HISTORY AND GEOGRAPHY</option>
+</select>
+</div>
+<div class="col-md-6">
+<label>select class</label>
+<input type="text" name="classes" class="form-control">
+</div>
+</div>
+</div>
+<div class="form-group">
+ <div class="form-row">
+<div class="col-md-6">
+<label>select Teaching Skill</label>
+<select name="skill" class="form-control">
+<option>Excellent</option>
+<option>Better</option>
+<option>Good</option>
+<option>Bad</option>
+</select>
+</div>
+<div class="col-md-6">
+<label>Timing</label>
+<select name="timing" class="form-control">
+<option>OnTime</option>
+<option>Late</option>
+<option></option>
+<option></option>
+</select>
+</div>
+</div>
+</div>
+<label>Course Completion</label>
+<select name="completion" class="form-control">
+<option>100%</option>
+<option>75%</option>
+<option>50%</option>
+<option>25%</option>
+</select>
+<label>Comment on teacher</label>
+<textarea name="comments" class="form-control" rows="5" cols="20">
+</textarea>
+<br>
+<input type="submit"class="btn btn-primary btn-block">
+</form>
+</div>
+</div>
+</div>
+  <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="js/sb-admin-datatables.min.js"></script>
+</body>
+</html>
